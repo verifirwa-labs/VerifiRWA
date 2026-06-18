@@ -1,0 +1,19 @@
+{
+  "name": "@verifirwa/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for VerifiRWA — RWA tokenization on Stellar Soroban",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^12.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
