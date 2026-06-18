@@ -14,7 +14,7 @@
 ## 1. Clone and Build
 
 ```bash
-git clone https://github.com/your-org/verifirwa
+git clone https://github.com/verifirwa-labs/VerifiRWA.git
 cd verifirwa
 
 # Build all four contracts for wasm32
