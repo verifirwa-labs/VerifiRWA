@@ -1,0 +1,7 @@
+target/
+.env
+.env.testnet
+*.wasm
+!artifacts/*.wasm
+node_modules/
+dist/

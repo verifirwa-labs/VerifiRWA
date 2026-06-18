@@ -1,0 +1,26 @@
+[workspace]
+members = [
+    "contracts/rwa_registry",
+    "contracts/compliance_engine",
+    "contracts/yield_distributor",
+    "contracts/oracle_receiver",
+]
+resolver = "2"
+
+[workspace.dependencies]
+soroban-sdk = { version = "22.0.0", features = ["testutils"] }
+soroban-token-sdk = "22.0.0"
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
