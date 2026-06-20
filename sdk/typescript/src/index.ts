@@ -35,6 +35,16 @@ export type {
 } from "./types.js";
 
 export { AssetStatus, RoundStatus, VerifiRwaError } from "./types.js";
+export {
+  stroopsToUsdc,
+  usdcToStroops,
+  formatUsdc,
+  calculateClaimable,
+  isMatured,
+  daysUntilMaturity,
+  TESTNET,
+  MAINNET,
+} from "./utils.js";
 
 import { RwaRegistryClient } from "./contracts/registry.js";
 import { ComplianceClient } from "./contracts/compliance.js";
